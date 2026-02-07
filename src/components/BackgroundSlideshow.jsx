@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 
-// Generate photo array from 001.JPG to 037.JPG
+// Generate photo array from 001.JPG to 044.JPG
 const photos = Array.from({ length: 44 }, (_, i) => ({
     id: i + 1,
     src: `/images/${String(i + 1).padStart(3, '0')}.JPG`,
@@ -15,7 +15,6 @@ const photos = Array.from({ length: 44 }, (_, i) => ({
     ][i % 6]
 }))
 
-// Triple the photos for seamless looping with more content
 // Randomize the order for a more natural collage look
 const allPhotos = [...photos, ...photos, ...photos].sort(() => Math.random() - 0.5)
 

@@ -63,7 +63,6 @@ function Celebration() {
         return () => clearInterval(interval)
     }, [])
 
-    // ... (confetti logic stays the same)
 
     return (
         <motion.div
@@ -107,7 +106,7 @@ function Celebration() {
                 </motion.div>
             </motion.div>
 
-            {/* Photo Gallery Section with more breathing room */}
+            {/* Photo Gallery Section */}
             <motion.div
                 initial={{ y: 50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}

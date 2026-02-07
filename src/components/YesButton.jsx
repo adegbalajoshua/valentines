@@ -8,11 +8,11 @@ function YesButton({ noAttempts, onClick }) {
 
     const getButtonText = () => {
         if (noAttempts === 0) return "Yes! 💕"
-        if (noAttempts === 1) return "Yes! 💖"
-        if (noAttempts === 2) return "Yes!! 💗"
-        if (noAttempts === 3) return "YES!! 💝"
-        if (noAttempts >= 4 && noAttempts < 7) return "YES!!! 🥰"
-        return "YESSS!!! 😍💕"
+        if (noAttempts === 1) return "Yes!! 💖"
+        if (noAttempts === 2) return "Yes!!! 💗"
+        if (noAttempts === 3) return "YES!!!!💝"
+        if (noAttempts >= 4 && noAttempts < 7) return "YES!!!! 🥰"
+        return "YESSS!!!!! 😍💕"
     }
 
     return (
