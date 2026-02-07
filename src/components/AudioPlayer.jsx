@@ -27,7 +27,7 @@ function AudioPlayer({ playMusic, playSuccess, onSuccessPlayed }) {
             musicRef.current.volume = 0.3
             musicRef.current.play()
                 .then(() => {
-                    setHasInteracted(true) // Mark as interacted once music starts
+                    setHasInteracted(true)
                 })
                 .catch((err) => {
                     console.log('Autoplay blocked, user must click toggle:', err)
@@ -64,7 +64,7 @@ function AudioPlayer({ playMusic, playSuccess, onSuccessPlayed }) {
                 preload="auto"
             >
                 {/* Success sound effect */}
-                <source src="/sounds/Ngozi - Crayon.mp3" type="audio/mpeg" />
+                <source src="/sounds/Ngozi - Crayon (Optimized).mp3" type="audio/mpeg" />
             </audio>
 
             <audio
@@ -73,7 +73,7 @@ function AudioPlayer({ playMusic, playSuccess, onSuccessPlayed }) {
                 preload="auto"
             >
                 {/* Background music */}
-                <source src="/sounds/Nothing's Gonna Change My Love for You - George Benson.mp3" type="audio/mpeg" />
+                <source src="/sounds/Nothing's Gonna Change My Love for You - George Benson (Optimized).mp3" type="audio/mpeg" />
             </audio>
 
             {/* Audio toggle button */}
